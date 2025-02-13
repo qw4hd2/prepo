@@ -1,0 +1,121 @@
+.footer-container {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px; /* Prevents sections from shrinking too small on small screens */
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f0a500;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #f0a500;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .social-links li a:hover {
+    color: #f0a500;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .footer-bottom p {
+    font-size: 12px;
+    color: #bbb;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center;
+    }
+  
+    .footer-section {
+      margin: 10px 0;
+      text-align: center; /* Centers text on small screens */
+    }
+  
+    .footer-section h3 {
+      font-size: 16px; /* Smaller title size on mobile */
+    }
+  
+    .footer-section p,
+    .footer-section ul {
+      font-size: 12px; /* Smaller text on mobile */
+    }
+  
+    .social-links {
+      justify-content: center; /* Center social links */
+      margin-top: 20px;
+    }
+  
+    .footer-bottom p {
+      font-size: 10px; /* Smaller text for footer info */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-container {
+      padding: 30px 0;
+    }
+  
+    .footer-section h3 {
+      font-size: 14px; /* Even smaller text size on very small screens */
+    }
+  
+    .footer-section p,
+    .footer-section ul {
+      font-size: 11px;
+    }
+  }
+  
